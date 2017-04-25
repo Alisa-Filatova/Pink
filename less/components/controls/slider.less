@@ -1,0 +1,32 @@
+.slider {
+    position: relative;
+
+
+    &__control {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border: 2px solid @grey_light;
+        border-bottom: transparent;
+        border-right: transparent;
+        opacity: 0.5;
+        transform: rotate(316deg);
+        position: absolute;
+        top: 215px;
+        left: 58px;
+
+        &_right {
+            left: 860px;
+            transform: rotate(135deg);
+        }
+
+        &:hover {
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        &:active {
+            opacity: 0.2;
+        }
+    }
+}

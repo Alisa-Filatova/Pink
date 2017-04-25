@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'colors';
+
+.range-filter {
+    display: flex;
+    flex-direction: column;
+
+
+    &__block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid #dddfe0;
+        flex-basis: 70px;
+        position: relative;
+        z-index: 90;
+    }
+
+    &__scale {
+        background-color: #000;
+        height: 2px;
+        width: 350px;
+        cursor: pointer;
+
+        @media(max-width: @screen_mobile) {
+            width: 190px;
+        }
+    }
+
+    &__control {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid @pink;
+        background-color: @bg_grey;
+        position: absolute;
+        bottom: 27px;
+        z-index: 100;
+        cursor: pointer;
+
+        &:active {
+           background-color: @pink;
+        }
+    }
+}

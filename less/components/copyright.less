@@ -1,0 +1,27 @@
+@import '../colors';
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &__text {
+        margin-right: 15px;
+    }
+
+    &__link {
+        height: 34px;
+        margin-right: 10px;
+        text-decoration: none;
+        margin-left: 10px;
+        color: @pink;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}

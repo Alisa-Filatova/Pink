@@ -1,0 +1,52 @@
+@import '../../variables';
+@import '../../colors';
+
+
+.slider-paginator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    margin: 0 auto;
+    visibility: hidden;
+
+    &__control {
+       width: 6px;
+       height: 6px;
+       border-radius: 50%;
+       background-color: @grey_light;
+       border: 3px solid #f2f2f2;
+       opacity: 0.6;
+
+       &_active {
+        background-color: @white;
+        border: 3px solid #000;
+       }
+
+       &:hover {
+        opacity: 1;
+        transition: 0.3s;
+       }
+
+       &:active {
+        background-color: @white;
+        border: 3px solid #000;
+       }
+    }
+
+    @media (max-width: @screen_tablet) {
+        visibility: visible;
+    }
+
+    &_shop {
+        @media (max-width: @screen_tablet) {
+            visibility: hidden;
+        }
+
+        @media (max-width: @screen_mobile) {
+            visibility: visible;
+            margin-top: 20px;
+        }
+    }
+}

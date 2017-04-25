@@ -1,0 +1,46 @@
+@import '../../colors';
+
+.radio-btn {
+    display: none;
+
+    & + label span {
+        width: 40px;
+        height: 40px;
+        border: 3px solid @grey;
+        background-color: @white;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        opacity: 0.8;
+
+        &:hover {
+            border: 3px solid #000;
+            transition: 0.3s;
+        }
+
+        &:active {
+            border: 3px solid @pink;
+        }
+    }
+
+    &:checked + label span::after {
+        position: absolute;
+        top: 26px;
+        left: 26px;
+        width: 15px;
+        height: 15px;
+        content: '';
+        background: @pink;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+

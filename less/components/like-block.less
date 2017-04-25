@@ -1,0 +1,44 @@
+@import '../variables';
+@import '../colors';
+
+.like-block {
+    text-transform: uppercase;
+    color: @pink;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-left: 30px;
+
+    &_main {
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 52px;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        width: 14px;
+        height: 12px;
+        display: inline-block;
+        background-image: url('../img/spritesheet.png');
+        background-position: -120px -5px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        right: 21px;
+        bottom: 22px;
+
+        &:hover {
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        &:active {
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../colors';
+
+.checkbox {
+    display: none;
+
+    & + label span {
+        width: 40px;
+        height: 40px;
+        border: 3px solid #e5e5e5;
+        background-color: @white;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:hover {
+           border: 3px solid #000;
+           transition: 0.3s;
+        }
+
+        &:active {
+           border: 3px solid @pink;
+        }
+    }
+
+    &:checked + label span::after {
+        content: '';
+        width: 22px;
+        height: 16px;
+        position: absolute;
+        display: block;
+        top: 14px;
+        left: 12px;
+        background-color: @white;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        background-position: -159px -78px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+

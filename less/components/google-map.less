@@ -1,0 +1,17 @@
+@import '../variables';
+
+.google-map {
+    border: none;
+
+    @media (max-width: @screen_tablet) {
+        width: @container_tablet;
+        height: 360px;
+        margin: 0;
+    }
+
+    @media (max-width: @screen_mobile) {
+        width: @container_mobile;
+        height: 185px;
+        margin: 0;
+    }
+}

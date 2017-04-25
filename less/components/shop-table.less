@@ -1,0 +1,111 @@
+@import '../variables';
+@import '../colors';
+
+.shop-table {
+    border-collapse: collapse;
+    background-color: @white;
+    border-spacing: 0;
+
+    @media (min-width: @screen_mobile) {
+        margin-left: 0 !important;
+    }
+
+    @media (max-width: @screen_mobile) {
+        transition: margin-left 0.3s;
+        margin-left: -564px;
+    }
+
+    &__header {
+        padding: 20px 67px;
+        background-color: @bg_dark;
+        border: 2px solid #e5e5e5;
+        border-top: 2px solid @bg_dark;
+        color: @white;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &_empty {
+            border: @bg_grey;
+            background-color: @bg_grey;
+        }
+
+        &_hit {
+            background-image: url('../img/hit-flag.png');
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: @screen_tablet) {
+            padding: 7px 41px;
+        }
+
+        @media (max-width: @screen_mobile) {
+            padding: 5px 94px;
+            min-width: 91px;
+        }
+    }
+
+    &__service {
+        border: 2px solid #e5e5e5;
+        padding: 20px 73px;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 0;
+
+        @media (max-width: @screen_mobile) {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        &_yes {
+            background-image: url('../img/yes.png');
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media (max-width: @screen_mobile) {
+                background-position: 92%;
+            }
+        }
+
+        &_no {
+            background-image: url('../img/no.png');
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media (max-width: @screen_mobile) {
+                background-position: 92%;
+            }
+        }
+
+        @media (max-width: @screen_tablet) {
+            padding: 8px 12px;
+        }
+
+        &_title {
+            font-size: 14px;
+
+            @media (max-width: @screen_mobile) {
+                background-color: @bg_grey;
+                border-color: @bg_grey;
+            }
+        }
+    }
+
+    &__price {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        @media (max-width: @screen_tablet) {
+            font-size: 17px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0;
+        margin-top: 0;
+
+        @media (max-width: @screen_mobile) {
+            font-size: 18px;
+        }
+    }
+}
