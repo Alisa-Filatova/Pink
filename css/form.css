@@ -481,6 +481,7 @@ body {
   padding: 20px;
   border-radius: 3px;
   width: 250px;
+  outline: none;
 }
 .input-text:hover {
   border: 2px solid #000;
@@ -734,6 +735,7 @@ button:active {
 }
 .form__textarea {
   width: 770px;
+  resize: none;
 }
 @media (max-width: 700px) {
   .form__textarea {
