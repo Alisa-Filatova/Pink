@@ -1,15 +1,6 @@
 @import 'variables';
 @import 'colors';
 
-
-@font-face {
-    font-family: 'Open Sans', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-    font-weight: 300, 400, 600, 700;
-    font-style: normal;
-}
-
-/* open-sans-300 - latin_cyrillic_cyrillic-ext */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -22,7 +13,7 @@
        url('../fonts/open-sans-v13-latin_cyrillic_cyrillic-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/open-sans-v13-latin_cyrillic_cyrillic-ext-300.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
-/* open-sans-regular - latin_cyrillic_cyrillic-ext */
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -35,7 +26,7 @@
        url('../fonts/open-sans-v13-latin_cyrillic_cyrillic-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/open-sans-v13-latin_cyrillic_cyrillic-ext-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
-/* open-sans-600 - latin_cyrillic_cyrillic-ext */
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -48,7 +39,7 @@
        url('../fonts/open-sans-v13-latin_cyrillic_cyrillic-ext-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/open-sans-v13-latin_cyrillic_cyrillic-ext-600.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
-/* open-sans-700 - latin_cyrillic_cyrillic-ext */
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -64,7 +55,7 @@
 
 body {
     position: relative;
-    min-width: @screen_desktop;
+    min-width: 320px;
     font-family: @font-family_base;
     font-weight: 400;
     font-size: 18px;
@@ -76,30 +67,21 @@ body {
 
     @media (max-width: @screen_tablet) {
         font-size: 14px;
-        min-width: @screen_tablet;
-    }
-
-    @media (max-width: @screen_mobile) {
-        font-size: 14px;
-        min-width: @screen_mobile;
     }
 }
 
 .container {
-    width: @container_desktop;
+    max-width: @container_desktop;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 120px;
 
     @media (max-width: @screen_tablet) {
-        width: @container_tablet;
-        margin: 0;
-        padding: 0 40px;
+        width: 91%;
+        padding: 0 20px;
     }
 
     @media (max-width: @screen_mobile) {
-        width: @container_mobile;
-        margin: 0;
-        padding: 0 20px;
+        padding: 0;
     }
 }
 

@@ -23,7 +23,6 @@
 
         @media (max-width: @screen_mobile) {
           width: 50px;
-          left: 30px;
           position: relative;
           bottom: -5px;
           left: 19px;
@@ -46,12 +45,9 @@
     }
 
     &_close {
-        background-color: transparent;
-        background-image: url('../img/spritesheet.png');
-        background-repeat: no-repeat;
+        background: url('../img/spritesheet.png') no-repeat -70px -86px, transparent;
         width: 24px;
         height: 23px;
-        background-position: -70px -86px;
         display: none;
 
 
@@ -66,9 +62,8 @@
         @media (max-width: @screen_tablet) {
             display: block;
             position: absolute;
-            right: 12px;
-            top: 8px;
-            opacity: 0.6;
+            right: 17px;
+            top: 17px;
         }
     }
 }

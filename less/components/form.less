@@ -17,16 +17,14 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 90px 0;
-        padding-bottom: 50px;
+        padding: 90px 0 50px;
 
         @media (max-width: @screen_tablet) {
             padding: 52px 0;
         }
 
         @media (max-width: @screen_mobile) {
-            padding: 30px 15px;
-            padding-bottom: 0;
+            padding: 30px 15px 0;
         }
     }
 
@@ -37,12 +35,12 @@
         font-weight: 400;
         max-width: 730px;
 
-        @media(max-width: @screen_tablet) {
+        @media (max-width: @screen_tablet) {
             max-width: 500px;
 
         }
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             font-size: 13px;
         }
     }
@@ -57,14 +55,14 @@
         &_name {
             margin-top: 0;
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 flex-direction: column;
             }
         }
 
          &_contacts {
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 flex-basis: 20px;
             }
         }
@@ -72,7 +70,7 @@
         &_app {
             margin-top: 0;
 
-            @media(max-width: @screen_mobile) {
+            @media(max-width: 425px) {
                 background-color: @bg_grey;
             }
         }
@@ -80,7 +78,7 @@
         &_achivement {
             margin-top: 50px;
 
-            @media(max-width: @screen_mobile) {
+            @media (max-width: 425px) {
                 background-color: @bg_grey;
             }
         }
@@ -91,16 +89,16 @@
             align-items: center;
             flex-basis: 96%;
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 margin-bottom: 20px;
             }
 
-            @media(max-width: @screen_mobile) {
+            @media (max-width: @screen_mobile) {
                 flex-direction: column;
             }
         }
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             margin-top: 25px;
         }
     }
@@ -109,13 +107,13 @@
         position: relative;
         font-size: 18px;
 
-        @media(max-width: @screen_tablet) {
+        @media (max-width: 933px) {
             width: 235px;
         }
 
         &_name {
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 margin-bottom: 20px;
             }
         }
@@ -123,32 +121,28 @@
         &_phone {
             margin-left: 20px;
             margin-bottom: 20px;
-            background-image: url('../img/phone.png');
-            background-repeat: no-repeat;
-            background-position: 255px 19px;
+            background: url('../img/phone.png') no-repeat 255px 19px;
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 margin-left: 0;
                 background-position: 244px 23px;
             }
 
-            @media(max-width: @screen_mobile) {
+            @media (max-width: @screen_mobile) {
                 background-image: none;
             }
         }
 
         &_e-mail {
             margin-left: 50px;
-            background-image: url('../img/mail.png');
-            background-repeat: no-repeat;
-            background-position: 255px 23px;
+            background: url('../img/mail.png') no-repeat 255px 23px;
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 margin-left: 0;
                 background-position: 244px 23px;
             }
 
-            @media(max-width: @screen_mobile) {
+            @media (max-width: @screen_mobile) {
                 background-image: none;
             }
         }
@@ -171,7 +165,7 @@
         &_achivement {
             font-size: 18px;
 
-            @media(max-width: @screen_mobile) {
+            @media (max-width: @screen_mobile) {
                 font-size: 14px;
             }
         }
@@ -179,7 +173,7 @@
 
     &__fieldset-title {
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             display: none;
         }
     }
@@ -191,11 +185,11 @@
         flex-wrap: wrap;
         text-align: left;
 
-        @media(max-width: @screen_tablet) {
+        @media (max-width: 933px) {
             flex-direction: column;
         }
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             padding-left: 22px;
             font-size: 14px;
         }
@@ -212,7 +206,7 @@
         flex-direction: column;
         align-items: flex-start;
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             padding-left: 20px;
         }
     }
@@ -227,11 +221,11 @@
         width: 770px;
         resize: none;
 
-        @media(max-width: @screen_tablet) {
+        @media (max-width: 933px) {
             width: 520px;
         }
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             width: 230px;
             height: 120px;
         }
@@ -249,7 +243,7 @@
     &__fieldset {
         padding: 30px 32px;
 
-        @media(max-width: @screen_tablet) {
+        @media (max-width: 933px) {
             padding: 30px 20px;
         }
 
@@ -257,7 +251,7 @@
         &_achivement {
             padding-bottom: 0;
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 padding: 30px 118px;
             }
         }
@@ -265,16 +259,15 @@
         &_contacts {
             padding: 43px 20px;
 
-            @media(max-width: @screen_tablet) {
-                padding: 30px 160px;
-                padding-bottom: 30px;
+            @media (max-width: 933px) {
+                padding: 30px 160px 30px;
             }
         }
 
         &_emotions {
             padding: 30px 56px;
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 padding: 30px 20px;
             }
         }
@@ -282,13 +275,13 @@
         &_app {
             padding: 0 38px;
 
-            @media(max-width: @screen_tablet) {
+            @media (max-width: 933px) {
                 padding: 7px 148px;
                 margin-top: 30px;
             }
         }
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             padding: 0;
             margin-top: 0;
             border: none;
@@ -300,7 +293,6 @@
         &_achivement {
             margin-right: 30px;
        }
-
     }
 
     &__btn {
@@ -311,7 +303,7 @@
         padding: 7px 43px;
         border: 2px solid  #2aab6d;
 
-        @media(max-width: @screen_mobile) {
+        @media (max-width: @screen_mobile) {
             padding: 7px 40px;
         }
 

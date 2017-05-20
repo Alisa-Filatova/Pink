@@ -1,3 +1,4 @@
+@import "../../colors";
 .slider {
     position: relative;
 
@@ -13,11 +14,19 @@
         transform: rotate(316deg);
         position: absolute;
         top: 215px;
-        left: 58px;
+        left: -5%;
+
+        @media (max-width: 1113px) {
+            left: 6%;
+        }
 
         &_right {
-            left: 860px;
+            left: 100%;
             transform: rotate(135deg);
+
+            @media (max-width: 1113px) {
+                left: 91%;
+            }
         }
 
         &:hover {

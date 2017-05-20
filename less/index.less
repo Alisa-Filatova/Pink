@@ -15,33 +15,36 @@
 .page-title {
 
     &__heading_main {
-        @media (max-width: @screen_mobile) {
+        @media (max-width: 425px) {
             display: none;
         }
     }
 }
 
 .promo {
-    background-color: rgba(0, 0, 0, 0.3);
-    background-image: url('../img/iphone-6.png'), url('../img/back-desktop.jpg');
-    background-position: 70% bottom, center top;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1054px auto, cover;
+    background: url('../img/iphone-6.png') no-repeat 70% bottom,
+                url('../img/back-desktop.jpg') no-repeat center top,
+                rgba(0, 0, 0, 0.3);
+    background-size: auto, cover;
     padding-top: 170px;
     padding-bottom: 80px;
 
     @media (max-width: @screen_tablet) {
-        background-color: @bg_dark;
-        background-image: url('../img/iphone-6-tablet.png'), url('../img/back-tablet.jpg');
-        background-size: 700px auto, cover;
-        background-position: -7% bottom, center top;
+        background: url('../img/iphone-6-tablet.png') no-repeat right bottom,
+                    url('../img/back-tablet.jpg') no-repeat center top,
+                    @bg_dark;
+        background-size: auto, cover;
     }
 
-    @media (max-width: @screen_mobile) {
-        background-color: @bg_dark;
-        background-image: url('../img/iphone-6-mobile.png'), url('../img/back-mobile.jpg');
-        background-position: 0 130px, center -37px;
-        background-size: 296px auto, 317px;
+    @media (max-width: 640px) {
+        background-position: left bottom, center top;
+    }
+
+    @media (max-width: 425px) {
+        background: url('../img/iphone-6-mobile.png') no-repeat left 41%,
+                    url('../img/back-mobile.jpg') no-repeat center -37px,
+                    @bg_dark;
+        background-size: auto, 100% 73%;
         padding-bottom: 290px;
     }
 
@@ -53,10 +56,10 @@
         justify-content: center;
         max-width: 350px;
 
-        @media (max-width: @screen_mobile) {
-            margin-bottom: 0;
+        @media (max-width: 425px) {
+            margin: auto;
             position: relative;
-            top: 270px;
+            top: 298px;
         }
     }
 
@@ -72,14 +75,13 @@
             color: #f2cdd4;
         }
 
-        @media (max-width: @screen_mobile) {
+        @media (max-width: 425px) {
             line-height: 30px;
             font-size: 18px;
             padding: 8px 26px;
         }
     }
 }
-
 
 .platforms {
     display: flex;
@@ -90,7 +92,7 @@
     margin-bottom: 20px;
     min-width: 216px;
 
-    @media (max-width: @screen_mobile) {
+    @media (max-width: 425px) {
         margin-top: 30px;
         margin-bottom: 0;
     }
@@ -102,12 +104,11 @@
             font-size: 18px;
         }
 
-        @media (max-width: @screen_mobile) {
+        @media (max-width: 425px) {
             font-size: 14px;
         }
     }
 }
-
 
 .features {
 
@@ -129,8 +130,7 @@
     }
 
     &__background {
-        background-color: @bg_grey;
-        background-image: linear-gradient(357deg, transparent 80%, @white 50%);
+        background: linear-gradient(357deg, transparent 80%, @white 50%), @bg_grey;
 
         @media (max-width: @screen_tablet) {
             background-image: linear-gradient(357deg, transparent 92%, @white 50%);
@@ -169,10 +169,13 @@
     }
 }
 
-
 .features-item {
     padding-top: 30px;
     margin: 0 50px;
+
+    @media (max-width: 1085px) {
+        margin: 0 10px;
+    }
 
     @media (max-width: @screen_tablet) {
       flex-basis: 156px;
@@ -183,8 +186,7 @@
     &__title {
         font-size: 30px;
         font-weight: 700;
-        margin: auto;
-        margin-bottom: 30px;
+        margin: auto auto 30px;
 
         @media (max-width: @screen_tablet) {
             font-size: 18px;
@@ -210,14 +212,16 @@
 
         @media (max-width: @screen_mobile) {
             text-align: center;
+            max-width: 360px;
         }
     }
 
     &__image {
         width: 261px;
         height: 310px;
-        margin: auto;
-        margin-bottom: 43px;
+        margin: auto auto 43px;
+        background-repeat: no-repeat;
+        background-position: -13px 8px;
 
         @media (max-width: @screen_tablet) {
             display: none;
@@ -225,34 +229,26 @@
 
         &_image1 {
             background-image: url('../img/screen-1.png');
-            background-repeat: no-repeat;
-            background-position: -13px 8px;
         }
 
         &_image2 {
             background-image: url('../img/screen-2.png');
-            background-repeat: no-repeat;
-            background-position: -13px 8px;
         }
 
         &_image3 {
             background-image: url('../img/screen3.png');
-            background-repeat: no-repeat;
-            background-position: -13px 8px;
         }
 
         &_tablet-size {
-            width: 627px;
+            width: 44%;
             height: 550px;
-            background-image: url('../img/iphone-screen-big.png');
-            background-repeat: no-repeat;
-            background-position: 3px 4px;
+            background: url('../img/iphone-screen-big.png') no-repeat center;
+            background-size: contain;
             display: none;
 
             @media (max-width: @screen_tablet) {
                 display: flex;
                 margin: 0;
-                width: 290px;
             }
 
             @media (max-width: @screen_mobile) {
@@ -261,11 +257,9 @@
         }
 
         &_mobile-size {
-            background-image: url('../img/screen3.png');
-            background-repeat: no-repeat;
-            background-position: -13px 8px;
+            background: url('../img/screen3.png') no-repeat center 41px;
+            background-size: 100%;
             margin-bottom: 0;
-            margin-top: 30px;
             display: none;
 
             @media (max-width: @screen_mobile) {
@@ -287,7 +281,7 @@
 
     &__wrapper {
         display: flex;
-        flex-direction: row;
+        flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -331,9 +325,9 @@
 }
 
 .timer {
-    background-image: url('../img/24.png');
-    background-repeat: no-repeat;
-    width: 300px;
+    background: url('../img/24.png') no-repeat center;
+    background-size: contain;
+    width: 44%;
     height: 347px;
 }
 
@@ -351,18 +345,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 200px 30px;
-    padding-bottom: 10px;
-    background-image: url('../img/quotes.png');
-    background-repeat: no-repeat;
-    background-position: center 70px;
+    padding: 200px 30px 10px;
+    background: url('../img/quotes.png') no-repeat center 70px;
 
 
     @media (max-width: @screen_tablet) {
         background-image: none;
         font-size: 18px;
-        padding: 40px 20px;
-        padding-bottom: 30px;
+        padding: 40px 20px 30px;
     }
 
     @media (max-width: @screen_mobile) {
@@ -372,21 +362,16 @@
     }
 
     &__text {
-        width: 690px;
+        max-width: 690px;
         margin: auto;
 
         @media (max-width: @screen_tablet) {
-            width: 582px;
-        }
-
-        @media (max-width: @screen_mobile) {
-            width: 273px;
+            max-width: 582px;
         }
     }
 
     &__title {
-        margin: auto;
-        margin-top: 40px;
+        margin: 40px auto auto;
 
         @media (max-width: @screen_mobile) {
             margin-top: 10px;
@@ -407,13 +392,14 @@
 }
 
 .shop {
-    background-color: @bg_grey;
-    background-image: linear-gradient(356deg, transparent 564px, @white 30px);
+    background: linear-gradient(356deg, transparent 564px, @white 30px), @bg_grey;
     padding-top: 140px;
     padding-bottom: 100px;
 
     &__wrapper {
-        overflow: hidden;
+        @media (max-width: @screen_mobile) {
+            overflow: hidden;
+        }
     }
 
     @media (max-width: @screen_tablet) {
@@ -445,8 +431,7 @@
         font-weight: 300;
         line-height: 55px;
         max-width: 500px;
-        margin: 0 auto;
-        margin-bottom: 60px;
+        margin: 0 auto 60px;
 
         @media (max-width: @screen_tablet) {
             font-size: 40px;
