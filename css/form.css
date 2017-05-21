@@ -519,17 +519,17 @@ button:active {
   justify-content: space-around;
   margin-top: 50px;
 }
+@media (max-width: 425px) {
+  .form__section {
+    width: 100%;
+  }
+}
 .form__section_name {
   margin-top: 0;
 }
 @media (max-width: 933px) {
   .form__section_name {
     flex-direction: column;
-  }
-}
-@media (max-width: 933px) {
-  .form__section_contacts {
-    flex-basis: 20px;
   }
 }
 .form__section_app {
@@ -542,17 +542,21 @@ button:active {
 }
 .form__section_achivement {
   margin-top: 50px;
+  width: 100%;
 }
 @media (max-width: 425px) {
   .form__section_achivement {
     background-color: #f2f2f2;
   }
 }
+.form__section_emotions {
+  width: 100%;
+}
 .form__section_submit {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 96%;
+  width: 96%;
 }
 @media (max-width: 933px) {
   .form__section_submit {
@@ -578,7 +582,7 @@ button:active {
     width: 235px;
   }
 }
-@media (max-width: 933px) {
+@media (max-width: 837px) {
   .form__input_name {
     margin-bottom: 20px;
   }
@@ -642,19 +646,23 @@ button:active {
 .form__achievement-list {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
   text-align: left;
+  width: 100%;
+  padding-left: 0;
+  margin: auto;
 }
-@media (max-width: 933px) {
+@media (max-width: 905px) {
   .form__achievement-list {
-    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
   }
 }
-@media (max-width: 608px) {
+@media (max-width: 425px) {
   .form__achievement-list {
-    padding-left: 22px;
-    font-size: 14px;
+    flex-direction: column;
+    padding-left: 33px;
   }
 }
 .form__achievement-item {
@@ -678,18 +686,12 @@ button:active {
   cursor: pointer;
 }
 .form__textarea {
-  width: 770px;
+  width: 95%;
   resize: none;
 }
-@media (max-width: 933px) {
+@media (max-width: 844px) {
   .form__textarea {
-    width: 520px;
-  }
-}
-@media (max-width: 608px) {
-  .form__textarea {
-    width: 230px;
-    height: 120px;
+    width: 85%;
   }
 }
 .form__correction-symbol {
@@ -709,11 +711,7 @@ button:active {
 }
 .form__fieldset_achivement {
   padding-bottom: 0;
-}
-@media (max-width: 933px) {
-  .form__fieldset_achivement {
-    padding: 30px 118px;
-  }
+  width: 90%;
 }
 .form__fieldset_contacts {
   padding: 43px 20px;
@@ -724,7 +722,7 @@ button:active {
   }
 }
 .form__fieldset_emotions {
-  padding: 30px 56px;
+  width: 90%;
 }
 @media (max-width: 933px) {
   .form__fieldset_emotions {
@@ -734,9 +732,8 @@ button:active {
 .form__fieldset_app {
   padding: 0 38px;
 }
-@media (max-width: 933px) {
+@media (max-width: 837px) {
   .form__fieldset_app {
-    padding: 7px 148px;
     margin-top: 30px;
   }
 }
@@ -749,6 +746,11 @@ button:active {
 }
 .form__group_achivement {
   margin-right: 30px;
+}
+@media (max-width: 933px) {
+  .form__group_contacts {
+    max-width: 300px;
+  }
 }
 .form__btn {
   background-color: #2aab6d;

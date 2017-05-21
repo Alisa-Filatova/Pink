@@ -742,7 +742,6 @@ button:active {
 }
 @media (max-width: 844px) {
   .features-item {
-    flex-basis: 156px;
     padding: 0;
     margin: 0;
   }
