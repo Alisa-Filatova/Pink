@@ -917,12 +917,13 @@ button:active {
   }
 }
 .reviews-item__text {
-  max-width: 690px;
+  width: 690px;
   margin: auto;
 }
 @media (max-width: 844px) {
   .reviews-item__text {
     max-width: 582px;
+    width: auto;
   }
 }
 .reviews-item__title {
