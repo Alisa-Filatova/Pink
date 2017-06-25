@@ -783,10 +783,10 @@ button:active {
 }
 .features-item__image {
   width: 261px;
-  height: 310px;
+  height: 303px;
   margin: auto auto 43px;
   background-repeat: no-repeat;
-  background-position: -13px 8px;
+  background-position: top center;
 }
 @media (max-width: 844px) {
   .features-item__image {
