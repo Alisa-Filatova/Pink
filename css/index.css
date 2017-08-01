@@ -384,11 +384,13 @@ button:active {
   border: 2px solid #8a8a8a;
   border-bottom: transparent;
   border-right: transparent;
+  background: transparent;
   opacity: 0.5;
   transform: rotate(316deg);
   position: absolute;
   top: 215px;
   left: -5%;
+  z-index: 100;
 }
 @media (max-width: 1113px) {
   .slider__control {
@@ -526,7 +528,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 60px;
+  width: 84px;
   margin: 0 auto;
   visibility: hidden;
 }
@@ -553,6 +555,7 @@ button:active {
 @media (max-width: 844px) {
   .slider-paginator {
     visibility: visible;
+    margin-top: 20px;
   }
 }
 @media (max-width: 844px) {
@@ -892,6 +895,30 @@ button:active {
   width: 44%;
   height: 347px;
 }
+.reviews__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 400px;
+}
+@media (max-width: 844px) {
+  .reviews__wrapper {
+    max-height: 228px;
+  }
+}
+@media (max-width: 608px) {
+  .reviews__wrapper {
+    max-height: 166px;
+  }
+}
+@media (max-width: 420px) {
+  .reviews__wrapper {
+    max-height: 217px;
+  }
+}
 @media (max-width: 844px) {
   .reviews__slider {
     display: none;
@@ -903,11 +930,13 @@ button:active {
   justify-content: center;
   padding: 200px 30px 10px;
   background: url('../img/quotes.png') no-repeat center 70px;
+  transition: all 1s ease;
 }
 @media (max-width: 844px) {
   .reviews-item {
     background-image: none;
     font-size: 18px;
+    line-height: 28px;
     padding: 40px 20px 30px;
   }
 }
@@ -916,6 +945,7 @@ button:active {
     font-size: 14px;
     padding-left: 5px;
     padding-right: 5px;
+    line-height: 24px;
   }
 }
 .reviews-item__text {
