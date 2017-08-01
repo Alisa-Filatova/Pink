@@ -14,7 +14,7 @@
     <header class="page-header page-header_mini">
         <div class="container">
             <div class="page-header__wrapper page-header__wrapper_mini">
-                <a class="logo" href="index.html#">
+                <a class="logo" href="index.html">
                    <picture>
                         <source 
                             media="(max-width:425px)" 
@@ -43,7 +43,7 @@
             
             <ul class="main-nav__list">
                 <li class="main-nav__item">
-                    <a href="index.html#" class="logo">
+                    <a href="index.html" class="logo">
                         <picture>
                             <source 
                                 media="(max-width:425px)" 
@@ -64,16 +64,16 @@
                     </a>        
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="index.html#">Главная</a>
+                    <a class="main-nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item">
                     <a class="main-nav__link">Фотографии</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="form.html#">Конкурс</a>
+                    <a class="main-nav__link" href="form.html">Конкурс</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                    <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
                 </li>
             </ul>
         </nav>
@@ -356,10 +356,7 @@
                 
                     <div class="range-filter__block">
                      
-                        <button 
-                            class="photo-editor__icon 
-                            photo-editor__icon_crop"
-                        ></button>
+                        <button class="photo-editor__icon photo-editor__icon_crop"></button>
                         
                         <div 
                             class="range-filter__control 
@@ -373,10 +370,7 @@
                     
                     <div class="range-filter__block">
                         
-                        <button 
-                            class="photo-editor__icon 
-                            photo-editor__icon_fill"
-                        ></button>
+                        <button class="photo-editor__icon photo-editor__icon_fill"></button>
                         
                         <div 
                             class="range-filter__control 
@@ -390,10 +384,7 @@
                      
                     <div class="range-filter__block">
                         
-                        <button
-                            class="photo-editor__icon 
-                            photo-editor__icon_contrast"
-                        ></button>
+                        <button class="photo-editor__icon photo-editor__icon_contrast"></button>
                         
                         <div 
                             class="range-filter__control 
@@ -409,7 +400,10 @@
                         <button class="btn photo-editor__btn" type="submit">
                                 Запостить
                         </button>
-                        <button class="btn photo-editor__btn photo-editor__btn_unavailable" type="submit">
+                        <button
+                            class="btn photo-editor__btn photo-editor__btn_unavailable"
+                            type="submit"
+                        >
                                 Отмена
                         </button>
                     </div>
@@ -423,7 +417,7 @@
         <div class="container">
             
             <div class="page-footer__wrapper">
-                <a href="index.html#" class="logo">
+                <a href="index.html" class="logo">
                   <img src="img/logotype-black-desktop.png" alt="Pink">
                 </a>
                 
@@ -434,19 +428,32 @@
                 </div>
                 
                 <div class="copyright">
-                    <a class="copyright__link base-link" href="http://alicedesign.ru/">
+                    <a
+                        class="copyright__link base-link"
+                        href="http://alicedesign.ru/"
+                        target="_blank"
+                    >
                        Alisa Filatova
                     </a> 
                     for 
-                    <a class="copyright__link" href="https://htmlacademy.ru/">
-                      <img src="img/htmlacademy.png" alt="HTMLAcademy">
+                    <a
+                        class="copyright__link"
+                        href="https://htmlacademy.ru/"
+                        target="_blank"
+                    >
+                      <img
+                          src="img/htmlacademy.png"
+                          alt="HTMLAcademy"
+                      >
                     </a>
                 </div>
             </div>
         </div>  
     </footer>
 
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main-nav.js"></script>
+    <script src="js/like-block.js"></script>
 
 </body>
 </html>

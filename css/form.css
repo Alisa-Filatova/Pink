@@ -154,10 +154,10 @@ body {
   border-radius: 50%;
   border: 4px solid #e9ebec;
   position: relative;
+  transition: all 0.2s linear;
 }
 .social-btn:hover {
   border: 4px solid #000;
-  transition: 0.3s;
 }
 .social-btn:active {
   opacity: 0.4;
@@ -206,6 +206,7 @@ body {
   text-decoration: none;
   margin-left: 10px;
   color: #d22856;
+  transition: opacity 0.2s linear;
 }
 .copyright__link:hover {
   opacity: 0.8;
@@ -216,11 +217,10 @@ body {
 .logo:hover {
   opacity: 1;
   filter: drop-shadow(2px 0 0 #d22856);
-  transition: 0.3s;
+  transition: all 0.2s linear;
 }
 .logo:active {
   opacity: 0.6;
-  transition: 0.3s;
 }
 .page-header {
   width: 100%;
@@ -296,6 +296,7 @@ body {
 .main-nav__link {
   text-decoration: none;
   color: #fff;
+  transition: color 0.2s linear;
 }
 .main-nav__link:hover {
   color: #d22856;
@@ -472,6 +473,7 @@ button:active {
   line-height: 44px;
   border-radius: 25px;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 .form {
   display: flex;

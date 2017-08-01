@@ -14,7 +14,7 @@
     <header class="page-header page-header_mini">
         <div class="container">
             <div class="page-header__wrapper page-header__wrapper_mini">
-                <a class="logo" href="index.html#">
+                <a class="logo" href="index.html">
                    <picture>
                         <source 
                             media="(max-width:425px)"
@@ -43,7 +43,7 @@
             
             <ul class="main-nav__list">
                 <li class="main-nav__item">
-                    <a href="index.html#" class="logo">
+                    <a href="index.html" class="logo">
                         <picture>
                             <source 
                                 media="(max-width:425px)"
@@ -64,16 +64,22 @@
                     </a>        
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="index.html#">Главная</a>
+                    <a class="main-nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="photo.html#">Фотографии</a>
+                    <a class="main-nav__link" href="photo.html">Фотографии</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link">Конкурс</a>
+                    <a class="main-nav__link" href="">Конкурс</a>
                 </li>
                 <li class="main-nav__item">
-                    <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                    <a
+                        class="main-nav__link"
+                        href="https://htmlacademy.ru/"
+                        target="_blank"
+                    >
+                        HTML Academy
+                    </a>
                 </li>
             </ul>
 
@@ -92,7 +98,7 @@
 
     <main class="main-page container">
         
-        <form class="form" action="url" method="post">
+        <form class="form" action="" method="">
             
             <div class="form__heading-block">
                 <h2 class="form__heading">
@@ -109,7 +115,8 @@
                     <label 
                         class="form__label form__label_name" 
                         for="surname"
-                        >Фамилия:
+                    >
+                        Фамилия:
                     </label>
                     
                     <input 
@@ -126,7 +133,8 @@
                     <label 
                         class="form__label form__label_name" 
                         for="name"
-                    >Ваше имя:
+                    >
+                        Ваше имя:
                     </label>
                     
                     <input
@@ -143,7 +151,8 @@
                     <label 
                         class="form__label form__label_name" 
                         for="middle-name"
-                    >Отчество:
+                    >
+                        Отчество:
                     </label>
                     
                     <input
@@ -175,7 +184,8 @@
                                 checked
                             >
                             <label class="form__label form__label_app" for="iOS">
-                                <span class="form__radio-btn"></span>Pink для iOS
+                                <span class="form__radio-btn"></span>
+                                Pink для iOS
                             </label>
                         </li>
 
@@ -188,7 +198,8 @@
                                 value="Android"
                             >
                             <label class="form__label form__label_app" for="Android">
-                                <span class="form__radio-btn"></span>Pink на Android
+                                <span class="form__radio-btn"></span>
+                                Pink на Android
                             </label>
                         </li>
 
@@ -201,7 +212,8 @@
                                 value="Windows"
                             >
                             <label class="form__label form__label_app" for="Windows">
-                                <span class="form__radio-btn"></span>Windows Phone
+                                <span class="form__radio-btn"></span>
+                                Windows Phone
                             </label>
                         </li>
                     </ul>
@@ -219,7 +231,8 @@
                     <div class="form__group form__group_contacts">
                         <label 
                             class="form__label form__label_contacts" 
-                            for="phone-number">
+                            for="phone-number"
+                        >
                             Номер телефона
                         </label>
                         <input
@@ -234,7 +247,8 @@
                     <div class="form__group form__group_contacts">
                         <label 
                             class="form__label form__label_contacts" 
-                            for="e-mail">
+                            for="e-mail"
+                        >
                             Адрес почты
                         </label>
                         <input 
@@ -299,7 +313,8 @@
                                     value="norris"
                                 >
                                 <label class="form__label form__label_achivement" for="norris">
-                                    <span class="form__checkbox"></span>Видел Чака Норриса
+                                    <span class="form__checkbox"></span>
+                                    Видел Чака Норриса
                                 </label>
                             </li>
 
@@ -312,7 +327,8 @@
                                     value="suvenirs"
                                 >
                                 <label class="form__label form__label_achivement" for="suvenirs">
-                                    <span class="form__checkbox"></span>Накупил сувениров
+                                    <span class="form__checkbox"></span>
+                                    Накупил сувениров
                                 </label>
                             </li>
                         </div>
@@ -328,7 +344,8 @@
                                     checked
                                 >
                                 <label class="form__label form__label_achivement" for="tower">
-                                    <span class="form__checkbox"></span>Удержал башню
+                                    <span class="form__checkbox"></span>
+                                    Удержал башню
                                 </label>
                             </li>
                             
@@ -341,7 +358,8 @@
                                     value="hotel"
                                 >
                                 <label class="form__label form__label_achivement" for="hotel">
-                                    <span class="form__checkbox"></span>Разгромил отель
+                                    <span class="form__checkbox"></span>
+                                    Разгромил отель
                                 </label>
                             </li>
                         </div>
@@ -385,7 +403,7 @@
             
             <div class="page-footer__wrapper">
                
-                <a href="#index.html" class="logo">
+                <a href="index.html" class="logo">
                   <img src="img/logotype-black-desktop.png" alt="Pink">
                 </a>
                 
@@ -396,11 +414,18 @@
                 </div>
                 
                 <div class="copyright">
-                    <a class="copyright__link base-link" href="http://alicedesign.ru/">
+                    <a
+                        class="copyright__link base-link"
+                        href="http://alicedesign.ru/"
+                        target="_blank"
+                    >
                        Alisa Filatova
                     </a> 
                     for 
-                    <a class="copyright__link" href="https://htmlacademy.ru/">
+                    <a
+                        class="copyright__link" href="https://htmlacademy.ru/"
+                        target="_blank"
+                    >
                       <img src="img/htmlacademy.png" alt="HTMLAcademy">
                     </a>
                 </div>
