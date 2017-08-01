@@ -301,7 +301,7 @@ body {
 .main-nav__link:hover {
   color: #d22856;
 }
-.main-nav__link:active {
+.main-nav__link_active {
   border-bottom: 2px solid #d22856;
 }
 @media (max-width: 844px) {
